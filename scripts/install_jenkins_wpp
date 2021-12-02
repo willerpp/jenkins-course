@@ -21,10 +21,10 @@ systemctl start docker
 usermod -aG docker ubuntu
 
 # run jenkins
-docker network create jenkins
-mkdir -p /var/jenkins_home
+sudo docker network create jenkins
+sudo mkdir -p /var/jenkins_home
 chown -R 1000:1000 /var/jenkins_home/
-mkdir -p /var/jenkins-docker-certs
+sudo mkdir -p /var/jenkins-docker-certs
 chown -R 1000:1000 /var/jenkins-docker-certs
 
 docker run \
