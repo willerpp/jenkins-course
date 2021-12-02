@@ -28,7 +28,7 @@ sudo mkdir -p /var/jenkins-docker-certs
 chown -R 1000:1000 /var/jenkins-docker-certs
 
 docker run \
-  --name jenkins \
+  --name jenkins-docker \
   --detach \
   --privileged \
   --network jenkins \
